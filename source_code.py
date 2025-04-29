@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 # Step 1: Load Dataset
-df = pd.read_csv('exams.csv')
+df = pd.read_csv('exams[1].csv')
 
 # Step 2: Create Target Variable (Pass/Fail)
 df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
