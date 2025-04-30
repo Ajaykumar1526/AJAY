@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 
 # Load data
-df = pd.read_csv("exams.csv")
+df = pd.read_csv("exams[1].csv")
 
 
 # Data Preprocessing & Cleaning
