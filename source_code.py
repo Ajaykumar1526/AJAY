@@ -9,6 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Load data
 df = pd.read_csv("exams[1].csv")
+print(df) 
 
 
 # Data Preprocessing & Cleaning
@@ -35,7 +36,7 @@ plt.show()
 
 # Feature: Average score
 df['average_score'] = df[['math_score', 'reading_score', 'writing_score']].mean(axis=1)
-
+print(df) 
 
 # Model Development & Evaluation
 # Features and target
@@ -65,4 +66,6 @@ coeffs = pd.DataFrame({
 plt.figure(figsize=(10, 6))
 sns.barplot(data=coeffs, x="Coefficient", y="Feature")
 plt.title("Feature Importance (Linear Regression Coefficients)")
-plt.show()
+plt.show() 
+print(df) 
+
